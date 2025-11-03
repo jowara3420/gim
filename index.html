@@ -3,10 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>이것은 연습이다.</title>
+    <title>김해에반해 관광포털</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+      }
+      .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+
+      .nav-container-wrap {
+        background-color: #2a2f42;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nav-ul {
+        display: flex;
+        align-items: center;
+
+        font-size: 14px;
+      }
+      .nav-ul li {
+        width: 80px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+      }
+
+      .nav-ul li:hover:not(.etc) {
+        cursor: pointer;
+      }
+      .nav-ul li a {
+        color: white;
+      }
+
+      .selectNav {
+        background-color: red;
+      }
+
+      .etc {
+        color: rgb(255, 255, 255, 0.5);
+      }
+
+      .input-container-wrap {
+        margin: 0 auto;
+        padding: 50px 40px;
+        display: flex;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
-    이것은 연습이다. 코딩하는 중 코딩하는 중22222222 카페에서 코딩하는 중
-    3333333 카페에서 코딩한다고
+    <header class="header">
+      <div class="nav-container-wrap">
+        <div class="nav-container">
+          <ul class="nav-ul">
+            <li><a href="#">시정포털</a></li>
+            <li class="selectNav"><a href="#">관광포털</a></li>
+            <li><a href="#">분야포털</a></li>
+            <li><a href="#">공공예약포털</a></li>
+            <li><a href="#">주민자치포털</a></li>
+            <li><a href="#">기업119</a></li>
+            <li><a href="#">일자리지원센터</a></li>
+            <li><a href="#">김해시의회</a></li>
+            <li><a href="#">공공데이터</a></li>
+            <li><a href="#">스마트도시</a></li>
+            <li><a href="#">교통정보</a></li>
+            <li><a href="#">국가상징</a></li>
+            <li class="etc">|</li>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">누리집 안내</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="input-container-wrap">
+        <div class="logo-area">
+          <a href="index.html"
+            ><img
+              src="https://nextit.or.kr:48080/images/logo@2x_2025.png"
+              alt="김해에반해 로고 "
+              height="90px"
+          /></a>
+        </div>
+        <div class="input-area">
+          <select name="search-select" id="search-select">
+            <option value="통합검색">통합검색</option>
+            <option value="여행지">여행지</option>
+            <option value="음식">음식</option>
+          </select>
+          <input type="text" placeholder="검색어" />
+          <button class="search-btn">🔍</button>
+        </div>
+
+        <div class="sns-icon-area">
+          <a href=""
+            ><img src="https://nextit.or.kr:48080/images/bn1blog01@3x.png"
+          /></a>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    <script></script>
   </body>
 </html>
