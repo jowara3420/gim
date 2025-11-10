@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>김해에반해 관광포털</title>
+    <title>김해에반해-숙박</title>
     <style>
       * {
         margin: 0;
@@ -166,250 +166,6 @@
         color: #ccc;
         transition: color 0.3s;
       }
-      .main-visual {
-        width: 100%;
-        height: 720px;
-        margin: 0 auto;
-      }
-      .main-content-wrap {
-        max-width: 1920px;
-        height: 100%;
-        margin: 0 auto;
-        overflow: hidden;
-      }
-      .main-content-wrap ul {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        will-change: transform;
-        transition: transform 0.8s ease;
-      }
-
-      .slide-btn {
-        max-width: 1280px;
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        bottom: 40%;
-        margin: 0 auto;
-      }
-
-      .btn {
-        border: none;
-        outline: none;
-        background-color: inherit;
-        cursor: pointer;
-      }
-
-      .taste {
-        margin-top: 50px;
-        padding: 60px 40px;
-        text-align: center;
-        background-image: url(/img/bg4.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 50% 0%;
-        height: 400px;
-      }
-
-      .title {
-        color: white;
-        font-size: 28px;
-        text-align: center;
-        margin-bottom: 40px;
-      }
-
-      .taste-card-container {
-        margin: 0 auto;
-        width: 1100px;
-        overflow: hidden;
-      }
-
-      #taste-card-wrapper {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 26px;
-        scrollbar-width: none;
-        transition-duration: 0.8s;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        background-color: transparent;
-      }
-
-      .taste-card {
-        background: #fff;
-        box-shadow: 20px 10px 20px rgba(165, 165, 165, 0.327);
-        overflow: hidden;
-        color: #222;
-        width: 250px;
-      }
-
-      .taste-card .name {
-        font-weight: bold;
-        font-size: 16px;
-        margin-bottom: 5px;
-      }
-
-      .taste-card .desc {
-        font-size: 13px;
-        color: #666;
-        height: 30px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-      }
-
-      .taste-card .location {
-        font-size: 12px;
-        color: #0a6eff;
-        margin-top: 10px;
-      }
-
-      .info {
-        padding: 15px;
-        text-align: left;
-      }
-
-      p {
-        display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        unicode-bidi: isolate;
-      }
-
-      .healing {
-        text-align: center;
-        padding: 60px 40px;
-      }
-
-      .healing h2 {
-        font-size: 28px;
-        margin-bottom: 30px;
-      }
-
-      .spot-container {
-        margin: 0 auto;
-        max-width: 1280px;
-        isolation: isolate;
-        overflow: hidden;
-      }
-
-      .spot-card-wrapper {
-        display: flex;
-        justify-content: flex-start;
-        gap: 30px;
-        scrollbar-width: none;
-        transition-duration: 0.8s;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        background-color: transparent;
-      }
-
-      .spot-card {
-        text-align: left;
-        width: 400px;
-        height: 328px;
-      }
-      .spot-img {
-        position: relative;
-        height: 267px;
-        margin-bottom: 10px;
-      }
-      .plus-btn {
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        bottom: 0;
-        right: 0;
-        border: 0;
-        background-color: #e91e63;
-        font-size: 24px;
-        color: white;
-      }
-      .spot-card .name {
-        margin: 0;
-        font-weight: bold;
-        font-size: 16px;
-        margin-bottom: 5px;
-      }
-
-      .spot-card .desc {
-        margin: 0;
-        font-size: 13px;
-        color: #666;
-        height: 30px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-      }
-
-      .slide-btn-container {
-        display: flex;
-        justify-content: center;
-        gap: 25%;
-      }
-
-      .content-wrapper {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: flex;
-        gap: 30px;
-      }
-      .utility {
-        padding: 60px 40px;
-      }
-
-      .notice-container {
-        flex: 2;
-        border: 1px solid lightgray;
-        padding: 30px;
-        position: relative;
-      }
-
-      .notice-plus {
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        width: 25px;
-        height: 25px;
-        border: 1px solid lightgray;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      .notice-list li:not(#lastNotice) {
-        font-size: 15px;
-        padding: 8px 0;
-        border-bottom: 1px dashed lightgray;
-      }
-
-      #lastNotice {
-        font-size: 15px;
-        padding: 8px 0;
-      }
-      .utility-warp {
-        flex: 1;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5px;
-      }
-
-      .utility-item {
-        background-color: #673ab7;
-        width: 250px;
-        text-align: center;
-        padding: 20px 10px;
-        color: white;
-        font-weight: 500;
-      }
-
-      .utility-item img {
-        width: 70px;
-        height: 70px;
-      }
 
       .footer {
         font-size: 14px;
@@ -511,6 +267,224 @@
         cursor: pointer;
         z-index: 100;
       }
+
+      .banner {
+        background-image: url(/img/sleep-bg.jpg);
+        display: flex;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .banner h1 {
+        font-size: 28px;
+        color: white;
+      }
+
+      .content-header-title {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 30px 40px 40px;
+      }
+
+      .header-title {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid lightgray;
+      }
+
+      .sns-link {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .sns-link a {
+        padding: 5px;
+      }
+
+      .sns-link img {
+        height: 30px;
+        vertical-align: middle;
+      }
+
+      .content-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px 40px;
+      }
+
+      .viewCount {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid lightgray;
+        padding: 15px;
+      }
+
+      .sort {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+      }
+
+      .sort label {
+        font-size: 13px;
+      }
+
+      .sort select {
+        margin-left: 10px;
+        padding: 6px 10px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        height: 50px;
+        display: inline-block;
+      }
+
+      .filter-option {
+        padding: 30px 0 10px;
+        text-align: right;
+        font-size: 12px;
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 20px;
+      }
+
+      .content-item {
+        display: flex;
+        align-items: flex-start;
+        padding: 20px;
+        border-bottom: 1px solid lightgray;
+      }
+      .item-img {
+        width: 300px;
+        height: 200px;
+        margin-right: 20px;
+      }
+
+      .item-img img {
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        object-fit: cover;
+      }
+
+      .item-title {
+        display: flex;
+        align-items: center;
+      }
+
+      .item-number {
+        display: flex;
+        width: 35px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+
+        background-color: red;
+        color: white;
+
+        border-radius: 50px;
+        margin-right: 20px;
+
+        font-size: large;
+        font-weight: 500;
+      }
+
+      .item-info {
+        padding-top: 40px;
+        font-size: 12px;
+      }
+
+      .item-info li {
+        padding: 2px;
+        color: #666666;
+      }
+
+      .label {
+        font-weight: bold;
+        margin-right: 5px;
+        color: black;
+      }
+
+      .item-desc {
+        flex-grow: 1;
+        border-right: 1px solid lightgray;
+      }
+
+      .item-rating {
+        text-align: center;
+        width: 300px;
+      }
+
+      .rating-title {
+        font-size: 13px;
+        color: #666;
+      }
+
+      .star {
+        color: gold;
+        font-size: 20px;
+      }
+
+      .score {
+        font-size: 32px;
+        font-weight: 300;
+        color: #333;
+        margin: 5px 0 15px;
+      }
+
+      .scrap-btn,
+      .findRoot-btn {
+        width: 90px;
+        margin: 5 auto;
+        padding: 6px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        font-size: 12px;
+      }
+      .findRoot-btn {
+        background-color: white;
+      }
+
+      .scrap-btn {
+        background-color: #0a6eff;
+        color: white;
+        border-color: #0a6eff;
+      }
+
+      .pagination-section {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 50px;
+      }
+
+      .pagination-section button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        background: white;
+        color: #897777;
+        margin: 0 2px;
+        border: 1px solid #d7d7d7;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .list-pagination {
+        text-align: center;
+        display: flex;
+      }
+
+      .kakaoMap {
+        margin-top: 40px;
+        padding: 20px;
+        max-width: 1280px;
+        height: 400px;
+      }
     </style>
   </head>
   <body>
@@ -610,131 +584,92 @@
         </div>
       </div>
     </header>
+
     <main>
-      <section class="main-visual">
-        <div class="main-content-wrap">
-          <ul id="main-content-wrapper">
-            <li>
-              <div class="main-img">
-                <img
-                  src="img/v20250103_01.jpg"
-                  alt="김해 관광 대표 이미지"
-                  width="1920"
-                />
-              </div>
-            </li>
-            <li>
-              <div class="main-img">
-                <img
-                  src="/img/v20250103_02.jpg"
-                  alt="김해 관광 대표 이미지"
-                  width="1920"
-                />
-              </div>
-            </li>
-
-            <li>
-              <div class="main-img">
-                <img
-                  src="/img/v20250103_03.jpg"
-                  alt="김해 관광 대표 이미지"
-                  width="1920"
-                />
-              </div>
-            </li>
-          </ul>
-          <div class="slide-btn">
-            <button class="btn" id="prev-btn">
-              <img src="/img/prev-btn.png" />
-            </button>
-            <button class="btn" id="next-btn">
-              <img src="/img/next-btn.png" />
-            </button>
+      <div class="content-header">
+        <div class="banner">
+          <h1>숙박</h1>
+        </div>
+        <div class="content-header-title">
+          <div class="header-title">
+            <div>
+              <h2>김해의 숙박</h2>
+            </div>
+            <div class="sns-link">
+              <a href="#"><img src="/img/bn1blog@2x.png" alt="" /></a>
+              <a href="#"><img src="/img/bn1facebook@2x.png" alt="" /></a>
+              <a href="#"><img src="/img/bn1twitter@2x.png" alt="" /></a>
+              <a href="#"><img src="/img/bn1kakaotalk@2x.png" alt="" /></a>
+              <a href="#"><img src="/img/bn1pdf@2x.png" alt="" /></a>
+              <a href="#"><img src="/img/bn1link@2x.png" alt="" /></a>
+              <a href="#"
+                ><img class="print-img" src="/img/bn1print.png" alt=""
+              /></a>
+            </div>
           </div>
         </div>
-      </section>
-      <section class="taste">
-        <div>
-          <h2 class="title">김해의 '맛'에 빠지다!</h2>
-        </div>
-        <div class="taste-card-container">
-          <ul id="taste-card-wrapper"></ul>
-        </div>
-        <div class="slide-btn">
-          <button class="btn" id="taste-prev">
-            <img src="/img/prev-btn.png" />
-          </button>
-          <button class="btn" id="taste-next">
-            <img src="/img/next-btn.png" />
-          </button>
-        </div>
-      </section>
-      <section class="healing">
-        <h2>힐링 되는 색다른 여행지</h2>
-        <div class="spot-container">
-          <ul class="spot-card-wrapper" id="spot-card-wrapper"></ul>
-        </div>
-        <div class="slide-btn-container">
-          <button class="btn" id="spot-prev">
-            <img src="/img/prev-btn.png" />
-          </button>
-          <button class="btn" id="spot-next">
-            <img src="/img/next-btn.png" />
-          </button>
-        </div>
-      </section>
-      <section class="utility">
+
         <div class="content-wrapper">
-          <div class="notice-container">
-            <h2 class="notice-title">공지사항</h2>
-            <button class="notice-plus">+</button>
-            <ul class="notice-list">
-              <li>
-                경남에서 한 달 여행하기 '아름다운 김해' 참가자 모집 (D-day 8)
-              </li>
-              <li>경남에서 한 달 여행하기 '아름다운 김해' 2차 참가자 모집</li>
-              <li>
-                경남에서 한 달 여행하기 '김해에 반해' 참가자 모집 공고(2차)
-              </li>
-              <li>2024년 김해DMZ 관광콘텐츠에 역량강화된 교육 신청 안내</li>
-              <li id="lastNotice">
-                경남에서 한 달 여행하기 '김해에 반해' 참가자 모집 공고(2차)
-              </li>
-            </ul>
+          <div class="viewCount">
+            <p class="count" id="content-counter"></p>
+            <form class="sort">
+              <label for="category">
+                축제 분류
+                <select
+                  name="category"
+                  id="category"
+                  onchange="categoryOnChange(this.value)"
+                >
+                  <option value="all">전체</option>
+                </select>
+              </label>
+              <label for="limitSize">
+                한눈에 보고 싶은 갯수
+                <select
+                  name="limitSize"
+                  id="limitSize"
+                  onchange="limitSizeOnChange(this.value)"
+                >
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                </select>
+              </label>
+              <label for="pageSize">
+                페이지 갯수
+                <select
+                  name="pageSize"
+                  id="pageSize"
+                  onchange="pageSizeOnChange(this.value)"
+                >
+                  <option value="5">5</option>
+                </select>
+              </label>
+            </form>
+          </div>
+          <div class="filter-option">
+            <span style="color: red">✔ 추천순</span>
+            |
+            <span>가나다순</span>
+            |
+            <span>평점순</span>
           </div>
 
-          <div class="utility-warp">
-            <a
-              href="https://www.gimhae.go.kr/00558.web?amode=view&idx=575&"
-              class="utility-item"
-            >
-              <div class="warp-icon">
-                <img src="/img/menu9p01@2x.png" />
-                <p>종합관광안내소</p>
+          <section class="content-section">
+            <div class="content-list" id="content-list"></div>
+            <div class="pagination-section" id="pagination-section">
+              <button class="pre-button" id="pre-button">이전</button>
+              <div class="list-pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
               </div>
-            </a>
-            <a href="https://www.gimhae.go.kr/00559.web" class="utility-item">
-              <div class="warp-icon">
-                <img src="/img/menu9p02@2x.png" />
-                <p>1330관광안내전화</p>
-              </div>
-            </a>
-            <a href="https://www.gimhae.go.kr/00567.web" class="utility-item">
-              <div class="warp-icon">
-                <img src="/img/menu9p03@2x.png" />
-                <p>관광안내책자</p>
-              </div>
-            </a>
-            <a href="https://www.gimhae.go.kr/00578.web" class="utility-item">
-              <div class="warp-icon">
-                <img src="/img/menu9p04@2x.png" />
-                <p>Q&A</p>
-              </div>
-            </a>
-          </div>
+              <button class="next-button" id="next-button">이후</button>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
     </main>
+
     <footer class="footer">
       <div class="footer-top-menu">
         <a href="#">정책정보 모음</a>
@@ -791,27 +726,22 @@
       </div>
       <button class="top-btn">TOP</button>
     </footer>
-    <script src="js/taste.js"></script>
-    <script src="js/getData.js"></script>
-    <script src="js/slide.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/healingSpot.js"></script>
+
+    <script src="/js/common.js"></script>
+    <script src="/js/getData.js"></script>
+    <script src="js/accommodation.js"></script>
+    <script src="js/pagination.js"></script>
     <script>
-      let vIndex = 0;
+      let map = null;
+      let originDatabase = [];
+      let currentPage = 1;
+      let totalPage = 0;
+      let pageGroup = 0;
+      let lastNumber = 5;
+      let firstNumber = 1;
 
       window.onload = () => {
-        slideImage(
-          "prev-btn",
-          "next-btn",
-          "main-content-wrapper",
-          "main-img",
-          1,
-          1920,
-          vIndex
-        );
-
-        initTaste();
-        initSpot();
+        init();
       };
     </script>
   </body>
